@@ -1,0 +1,48 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" id="menu" version="2.0">
+	<jsp:output omit-xml-declaration="yes"/>
+	<ul id="roo_menu">
+			
+	<li id="web_mvc_jsp_item_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_item_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_item_menu_item">
+                    <spring:url value="/item/form" var="web_mvc_jsp_create_item_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_item_menu_item_url}">
+                        <spring:message code="label.item" var="label_item"/>
+                        <spring:message arguments="${label_item}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_item_menu_item">
+                    <spring:url value="/item?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_item_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_item_menu_item_url}">
+                        <spring:message code="label.items" var="label_items"/>
+                        <spring:message arguments="${label_items}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    <li id="web_mvc_jsp_bid_category">
+            <h2>
+                <spring:message code="menu.category.web_mvc_jsp_bid_category.label"/>
+            </h2>
+            <ul>
+                <li id="web_mvc_jsp_create_bid_menu_item">
+                    <spring:url value="/bid/form" var="web_mvc_jsp_create_bid_menu_item_url"/>
+                    <a href="${web_mvc_jsp_create_bid_menu_item_url}">
+                        <spring:message code="label.bid" var="label_bid"/>
+                        <spring:message arguments="${label_bid}" code="global.menu.new"/>
+                    </a>
+                </li>
+            <li id="web_mvc_jsp_list_bid_menu_item">
+                    <spring:url value="/bid?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_bid_menu_item_url"/>
+                    <a href="${web_mvc_jsp_list_bid_menu_item_url}">
+                        <spring:message code="label.bids" var="label_bids"/>
+                        <spring:message arguments="${label_bids}" code="global.menu.list"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

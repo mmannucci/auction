@@ -1,0 +1,15 @@
+<aspectj>
+<aspects>
+<aspect name="it.solvingteam.auction.domain.Bid_Roo_Configurable"/>
+<aspect name="it.solvingteam.auction.domain.Item_Roo_JavaBean"/>
+<aspect name="it.solvingteam.auction.web.BidController_Roo_Controller"/>
+<aspect name="it.solvingteam.auction.domain.Bid_Roo_ToString"/>
+<aspect name="it.solvingteam.auction.domain.Item_Roo_ToString"/>
+<aspect name="it.solvingteam.auction.domain.Item_Roo_Entity"/>
+<aspect name="it.solvingteam.auction.domain.Item_Roo_Configurable"/>
+<aspect name="it.solvingteam.auction.domain.Bid_Roo_Entity"/>
+<aspect name="it.solvingteam.auction.web.ItemController_Roo_Controller"/>
+<aspect name="it.solvingteam.auction.domain.Bid_Roo_JavaBean"/>
+</aspects>
+</aspectj>
+
